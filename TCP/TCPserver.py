@@ -11,5 +11,5 @@ while True:
     message_rcv = clientSocket.recv(2048).decode()
     print(f"client says: {message_rcv}; add; {address}")
     clientSocket.send(message_rcv.upper().encode())
-    clientSocket.close() #closing the connectiion after sending data 
+    clientSocket.close() #closing the connection after sending data 
     break #stopping the server here and closing the connection
